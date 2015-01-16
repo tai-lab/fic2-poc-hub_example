@@ -1,0 +1,10 @@
+pbr>=0.10.0
+Flask>=0.10
+flask-restful>=0.2.12
+jsonschema>=2.4.0
+layered-yaml-attrdict-config>=14.09.3
+Requests>=2.4.1
+flask_oauthlib>=0.7.0
+WTForms>=2.0.1
+Flask-WTF>=0.10.2
+Flask-Login>=0.2.11
