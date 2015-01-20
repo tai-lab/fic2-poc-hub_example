@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% macro class_with_errors(field, classes) %}
+  {% if field.errors %}
+    {{ classes }} has-error
+  {% else %}
+    {{classes }}
+  {% endif %}
+{% endmacro %}
+{% macro with_errors(field) %}
+  {% if field.errors %}
+    {{ field(**kwargs) }}
+    {% for error in field.errors %}<p class="text-danger">{{ error|e }}</p>{% endfor %}
+  {% else %}
+    {{ field(**kwargs) }}
+  {% endif %}
+{% endmacro %}
+{% block title %}Hub - Index{% endblock %}
+{% block section %}
+    <div class="bs-docs-section">
+      <div class="row">
+	<div class="col-lg-12">
+	  <div class="well bs-component">
+	    Welcome {{current_user_id}} !.
+	  </div>
+	</div>
+      </div>
+    </div>
+{% endblock %}

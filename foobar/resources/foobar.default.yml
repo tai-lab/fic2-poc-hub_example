@@ -1,0 +1,15 @@
+version: '0.0.1'
+debug: true
+host: '0.0.0.0'
+callback_url: 'https://11.22.33.44/authorize'
+port: 5000
+level: DEBUG
+oauth:
+  consumer_key: '743647539I634325753238'
+  consumer_secret: '014a33b635774c1fdccc835a2624dc2076a7b75221fb0cbd5092f0012b2c5910beccad9061f8abe287a9cca461ce5259d0f50f5764d50e6b2866eb1b6331e5ee'
+  request_token_params: {}
+  base_url: 'https://account.example.org'
+  request_token_url: !
+  access_token_url: 'https://account.example.org/oauth2/token'
+  access_token_method: 'POST'
+  authorize_url: 'oauth2/authorize'
