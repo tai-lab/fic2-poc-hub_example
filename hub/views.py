@@ -1,7 +1,7 @@
 import pprint
 import uuid
-from foobar import app
-from foobar.user import User
+from hub import app
+from hub.user import User
 from flask import request, render_template, session, redirect, url_for
 from flask.ext.login import login_required, login_user, current_user
 

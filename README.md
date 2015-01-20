@@ -1,7 +1,3 @@
-## About foobar-skeleton-site
+## About fic2-poc-hub_example
 
-This is a skeleton project that uses:
-  * python 3
-  * flask
-  * OAuth 2
-  * nginx
+This repository is a quick example for the Ficontent project.

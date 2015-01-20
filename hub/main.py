@@ -1,15 +1,15 @@
 import logging
 import http
-from foobar import app
-from foobar.configuration import cfg
-from foobar.user import User
+from hub import app
+from hub.configuration import cfg
+from hub.user import User
 from flask import request, session
 from flask_oauthlib.client import OAuth
 
 
 def _setup_logging(app):
     level = logging.getLevelName(cfg.level)
-    # logging.getLogger('foobar').setLevel(level)
+    # logging.getLogger('hub').setLevel(level)
     app.logger.setLevel(level)
     sh = logging.StreamHandler()
     sh.setLevel(cfg.level)

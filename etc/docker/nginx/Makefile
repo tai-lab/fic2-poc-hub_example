@@ -1,6 +1,6 @@
 all: build
 
 build: 
-	docker build --rm=true -t 'foobar-site-nginx:latest' .
+	docker build --rm=true -t 'fic2-hub-nginx:latest' .
 
 .PHONY: build

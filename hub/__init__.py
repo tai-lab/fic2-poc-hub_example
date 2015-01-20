@@ -7,4 +7,4 @@ app.secret_key = str(uuid.uuid4())
 _login_manager = LoginManager()
 _login_manager.init_app(app)
 
-import foobar.views
+import hub.views
