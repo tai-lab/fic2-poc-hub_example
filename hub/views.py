@@ -1,13 +1,15 @@
 import uuid
+import sys, json
 from hub import app
 from hub.user import User
+from hub.configuration import ses
 from flask import request, render_template, session, redirect, url_for
 from flask.ext.login import login_required, login_user, current_user
 
 @app.route('/')
 @login_required
 def root():
-    return render_template('index.html', current_user_id=current_user.id)
+    return render_template('index.html', current_user_id=current_user.id, ses=ses)
 
 
 @app.route('/authorize')

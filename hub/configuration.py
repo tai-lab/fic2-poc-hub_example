@@ -29,7 +29,15 @@ def _load_configuration(logger):
     logger.info(f.getvalue())
     return conf
 
+def _load_specific_enablers(logger):
+    logger.info(' * SEs ...')
+    ses = lya.AttrDict.from_yaml(resource_stream('hub.resources', 'specific_enablers.yml'))
+    logger.info(' * loaded %s ses.', len(ses))
+    return ses
+
+
 _logger, _handler = _setup_basic_logging()
 cfg = _load_configuration(_logger)
+ses = _load_specific_enablers(_logger)
 _handler.close()
 _logger.removeHandler(_handler)

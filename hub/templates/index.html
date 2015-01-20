@@ -24,5 +24,28 @@
 	  </div>
 	</div>
       </div>
+      <div class="row">
+	<div class="col-lg-12">
+	  <div class="well bs-component">
+	    {% for se, value in ses.items() %}
+	    <div class="list-group">
+	      <div class="list-group-item">
+		<div class="row-action-primary">
+		  <i class="mdi-action-backup"></i>
+		</div>
+		<div class="row-content">
+		  <div class="least-content">
+		    <a href="#{{value.image_id}}" class="btn btn-success"><i class="mdi-av-play-circle-fill .icons-material"></i> Launch</a>
+		    <a href="https://cloud.lab.fiware.org/#nova/images/{{value.image_id}}&reg=Lannion" class="btn btn-info"><i class="mdi-action-launch"></i> DIY</a>
+		  </div>
+		  <h4 class="list-group-item-heading">{{value.name}}</h4>
+		  <p class="list-group-item-text">{{value.description}}</p>
+		</div>
+	      </div>
+	      <div class="list-group-separator"></div>
+	    {% endfor %}
+	  </div>
+	</div>
+      </div>
     </div>
 {% endblock %}

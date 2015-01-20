@@ -1,0 +1,5 @@
+ppnet:
+  image_id: "23861c3c-8e5f-485f-9aa8-977963e3c637"
+  name: "Social Network SE Core"
+  description: |
+    This service can be used to create a social network, either temporarily or permanently for a group of users.
