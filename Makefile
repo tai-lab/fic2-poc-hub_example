@@ -11,4 +11,4 @@ launch_nginx:
 	docker run -it --rm=true --link="hub:hub" -p '443:443' 'fic2-hub-nginx:latest'
 
 launch_bower:
-	docker run -it --rm=true -u "$(id -u)" -v "$(pwd):/root" 'fic2-hub-bower:latest' /bin/bash
+	docker run -it --rm=true -u "$(id -u)" -v "$(pwd):/root" 'fic2-hub-bower:latest'
